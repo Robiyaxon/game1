@@ -1,0 +1,68 @@
+.wrapper
+{
+    padding: 0 50px;
+    height: auto;
+    margin-top: 59px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.img
+{
+    width: 54%;
+    height: 728px;
+}
+
+.information
+{
+    width: 44%;
+}
+
+.interactive
+{
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 36.31px;
+    text-align: right;
+    color: #076982;
+}
+
+.play
+{
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 36.31px;
+    text-align: right;
+    color: #076982;
+}
+
+.exercises
+{
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 36.31px;
+    text-align: right;
+    color: #076982;
+}
+
+.interesting
+{
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 36.31px;
+    text-align: right;
+    color: #076982;
+}
+
+.parent
+{
+    font-family: Inter;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 36.31px;
+    text-align: right;
+    color: #076982;
+}

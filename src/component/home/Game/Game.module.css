@@ -1,0 +1,22 @@
+.wrapper {
+    background-image: url("../../../assert/game.png");
+    padding: 189px 30px 100px 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.click {
+    text-decoration: none;
+
+}
+
+.click p {
+    font-size: 22px;
+    color: rgba(7, 105, 130, 1);
+    margin-top: 16px;
+    text-align: center;
+
+}

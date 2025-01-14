@@ -1,0 +1,44 @@
+.wrapper {
+    margin-top: 3rem;
+    padding: 0 121px;
+    background-image: url("../../assert//Ellipse\ 10.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+
+}
+
+.wrapper h1 {
+    color: rgba(7, 105, 130, 1);
+    text-align: center;
+    font-weight: 400;
+}
+
+.block {
+    border-left: 3px solid grey;
+    border-right: 3px solid grey;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 30%;
+    padding: 14px;
+    margin-top: 3rem;
+    border: 3px solid rgba(112, 112, 112, 1);
+    border-radius: 37px;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box p {
+    color: rgba(7, 105, 130, 1);
+    font-size: 20px;
+}
+
+.box h4 {
+    color: rgba(112, 112, 112, 1);
+    font-size: 18px;
+
+}

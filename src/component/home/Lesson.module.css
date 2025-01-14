@@ -1,0 +1,54 @@
+.wrapper {
+    margin-top: 6rem;
+    padding: 0 121px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.wrapper h1 {
+    color: rgba(7, 105, 130, 1);
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.box {
+    width: 22%;
+    border: 3px solid rgba(6, 104, 129, 1);
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.box2 {
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+
+}
+
+.box img {
+    width: 100%;
+
+}
+
+.href {
+    display: block;
+    /* a elementini blok elementiga aylantirish */
+    width: 100%;
+    /* Kengligini to'liq cardga teng qilish */
+    padding: 1rem;
+    /* Ichki bo'shliq qo'shish */
+    text-align: center;
+    /* Matnni markazlashtirish */
+    background: rgba(6, 104, 129, 1);
+    color: white;
+    /* Matn rangini oq qilish */
+    text-decoration: none;
+    /* Matnni ostiga chiziq qo'ymaslik */
+}
+
+.href:hover {
+    background: rgba(7, 120, 146, 1);
+    /* Hover effekti qo'shish */
+}
