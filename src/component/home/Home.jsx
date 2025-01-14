@@ -88,7 +88,7 @@ const Home = () => {
             onOpenChange={(nextOpen, info) => handleOpenChange(nextOpen, setOpenDropdown1, info)}
             open={openDropdown1}
           >
-            <a onClick={(e) => e.preventDefault()}>
+            <a onClick={(e) => e.preventDefault()} href='./'>
               <Space>
                 Ota-onalar 1
                 <DownOutlined />
@@ -105,7 +105,7 @@ const Home = () => {
             onOpenChange={(nextOpen, info) => handleOpenChange(nextOpen, setOpenDropdown2, info)}
             open={openDropdown2}
           >
-            <a onClick={(e) => e.preventDefault()}>
+            <a onClick={(e) => e.preventDefault()} href='./'>
               <Space>
                 Fanlar
                 <DownOutlined />
@@ -122,7 +122,7 @@ const Home = () => {
             onOpenChange={(nextOpen, info) => handleOpenChange(nextOpen, setOpenDropdown3, info)}
             open={openDropdown3}
           >
-            <a onClick={(e) => e.preventDefault()}>
+            <a onClick={(e) => e.preventDefault()} href='./'>
               <Space>
                 Sinflar
                 <DownOutlined />
