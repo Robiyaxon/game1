@@ -12,28 +12,28 @@ const Lesson = () => {
                 <img src={img} alt="" />
                 </div>
                 
-                <a href="#" className={style.href}>Yuklab olish</a>
+                <a href="./" className={style.href}>Yuklab olish</a>
             </div>
             <div className={style.box}>
                 <div className={style.box2}>
                 <img src={img} alt="" />
                 </div>
                 
-                <a href="#" className={style.href}>Yuklab olish</a>
+                <a href="./" className={style.href}>Yuklab olish</a>
             </div>
             <div className={style.box}>
                 <div className={style.box2}>
                 <img src={img} alt="" />
                 </div>
                 
-                <a href="#" className={style.href}>Yuklab olish</a>
+                <a href="./" className={style.href}>Yuklab olish</a>
             </div>
             <div className={style.box}>
                 <div className={style.box2}>
                 <img src={img} alt="" />
                 </div>
                 
-                <a href="#" className={style.href}>Yuklab olish</a>
+                <a href="./" className={style.href}>Yuklab olish</a>
             </div>
 
 
