@@ -8,22 +8,22 @@ const Card = () => {
     return (
       <div className={style.wrapper}>
         <div className={style.card}>
-          <img src={shablon} alt="Main Card Image" />
-          <img src={img1} alt="Inner Image" className={style['inner-image']} />
+          <img src={shablon} alt="" />
+          <img src={img1} alt="" className={style['inner-image']} />
           <div className={style.content}>
             <p>Video darsliklar</p>
           </div>
         </div>
         <div className={style.card}>
-          <img src={shablon} alt="Main Card Image" />
-          <img src={img2} alt="Inner Image" className={style['inner-image']} />
+          <img src={shablon} alt="" />
+          <img src={img2} alt="" className={style['inner-image']} />
           <div className={style.content}>
             <p>Kitoblar</p>
           </div>
         </div>
         <div className={style.card}>
-          <img src={shablon} alt="Main Card Image" />
-          <img src={img3} alt="Inner Image" className={style['inner-image']} />
+          <img src={shablon} alt="" />
+          <img src={img3} alt="" className={style['inner-image']} />
           <div className={style.content}>
             <p>Testlar</p>
           </div>
