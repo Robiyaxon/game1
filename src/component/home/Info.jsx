@@ -4,7 +4,7 @@ import img from "../../assert/22.png"
 const Info = () => {
   return (
     <div className='wrapper'>
-        <img src={img} className='img'/>
+        <img src={img} className='img' alt=''/>
 
         <div className="information">
         <p className='interactive'>Interaktiv videodarslar: Bolalarga tushunarli va qiziqarli bo‘lgan videodarslar orqali o‘qitish. Har bir dars ma’lum mavzularni bosqichma-bosqich tushuntiradi, qiziqarli animatsiyalar va ovozli izohlar bilan boyitilgan. Videodarslar o‘quvchilarni asosiy kompyuter tushunchalari, dasturlashning ilk qadamlaridan boshlab tanishtiradi.</p>
