@@ -14,27 +14,27 @@ const Lesson = () => {
                 <img src={img} alt="" />
                 </div>
                 
-                <a href={book2} target="_blank" className={style.href}>Yuklab olish</a>
+                <a href={book2} target="_blank"  rel="noopener noreferrer"  className={style.href}>Yuklab olish</a>
             </div>
             <div className={style.box}>
                 <div className={style.box2}>
                 <img src={img} alt="" />
                 </div>
-                <a href={book} target="_blank" className={style.href} download>Yuklab olish</a>
-            </div>
-            <div className={style.box}>
-                <div className={style.box2}>
-                <img src={img} alt="" />
-                </div>
-                
-                <a href={book} target="_blank" className={style.href}>Yuklab olish</a>
+                <a href={book} target="_blank"  rel="noopener noreferrer"  className={style.href} download>Yuklab olish</a>
             </div>
             <div className={style.box}>
                 <div className={style.box2}>
                 <img src={img} alt="" />
                 </div>
                 
-                <a href={book2} target="_blank" className={style.href}>Yuklab olish</a>
+                <a href={book} target="_blank"  rel="noopener noreferrer"  className={style.href}>Yuklab olish</a>
+            </div>
+            <div className={style.box}>
+                <div className={style.box2}>
+                <img src={img} alt="" />
+                </div>
+                
+                <a href={book2} target="_blank"  rel="noopener noreferrer"  className={style.href}>Yuklab olish</a>
             </div>
 
 

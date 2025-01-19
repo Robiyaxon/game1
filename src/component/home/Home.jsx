@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { DownOutlined, SearchOutlined, MenuOutlined, CloseOutlined } from '@ant-design/icons';
-import { Button, Dropdown, Space } from 'antd';
+import { DownOutlined,  MenuOutlined, CloseOutlined } from '@ant-design/icons';
+import {  Dropdown, Space } from 'antd';
 import style from "./Home.module.css";
 import { NavLink } from 'react-router-dom';
 import logo from "../../assert/logo2.png";
@@ -27,9 +27,9 @@ const Home = () => {
     setSearchValue(e.target.value);
   };
 
-  const handleSearch = () => {
-    alert(`Searching for: ${searchValue}`);
-  };
+  // const handleSearch = () => {
+  //   alert(`Searching for: ${searchValue}`);
+  // };
   const handleMenuClick = (e, dropdownSetter) => {
     if (e.key === 'close') {
       dropdownSetter(false);
