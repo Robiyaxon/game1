@@ -16,7 +16,9 @@ const Login = () => {
       alert("Invalid username or password");
     }
   };
-
+  const navigate1 = () => {
+    navigate("/register");
+  };
   return (
     <div className={style.wrapper}>
       <div className={style.top_header}>
@@ -29,7 +31,8 @@ const Login = () => {
         layout="vertical"
         className={style.form}
       >
-          <Button className={style.button_sign_in} block="true" type="primary" htmlType="submit">
+        <Button className={style.button_sign_in} onClick={navigate1}
+          block="true" type="primary" htmlType="submit">
           Tizimga kirish
         </Button>
         {/* Username Field */}
@@ -67,7 +70,7 @@ const Login = () => {
           </Button>
 
         </Form.Item>
-        <a className={style.password} href="./">
+        <a className={style.password} href="./   ">
           Forgot password?
         </a>
       </Form>

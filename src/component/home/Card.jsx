@@ -7,26 +7,38 @@ import img3 from "../../assert/calendar2-check.png"
 const Card = () => {
     return (
       <div className={style.wrapper}>
+        
         <div className={style.card}>
-          <img src={shablon} alt="" />
+        <a href="#target-section1" >
+        <img src={shablon} alt="" />
           <img src={img1} alt="" className={style['inner-image']} />
           <div className={style.content}>
             <p>Video darsliklar</p>
           </div>
+        </a>
+          
         </div>
         <div className={style.card}>
-          <img src={shablon} alt="" />
+        <a href="#target-section" >
+        <img src={shablon} alt="" />
           <img src={img2} alt="" className={style['inner-image']} />
           <div className={style.content}>
             <p>Kitoblar</p>
           </div>
+          
+        </a>
+       
         </div>
         <div className={style.card}>
-          <img src={shablon} alt="" />
+        <a href="#target-section3" >
+
+           <img src={shablon} alt="" />
           <img src={img3} alt="" className={style['inner-image']} />
           <div className={style.content}>
             <p>Testlar</p>
           </div>
+        </a>
+         
         </div>
       </div>
     );

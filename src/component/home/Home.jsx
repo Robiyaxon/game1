@@ -14,13 +14,22 @@ import Info from './Info';
 import Test from './Test';
 import Game from './Game/Game';
 import FAQ from './Faq';
+import { FiSearch } from 'react-icons/fi';
 
 const Home = () => {
   const [openDropdown1, setOpenDropdown1] = useState(false);
   const [openDropdown2, setOpenDropdown2] = useState(false);
   const [openDropdown3, setOpenDropdown3] = useState(false);
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
 
+  const handleInputChange = (e) => {
+    setSearchValue(e.target.value);
+  };
+
+  const handleSearch = () => {
+    alert(`Searching for: ${searchValue}`);
+  };
   const handleMenuClick = (e, dropdownSetter) => {
     if (e.key === 'close') {
       dropdownSetter(false);
@@ -67,7 +76,7 @@ const Home = () => {
       <Info />
       <Test />
       <Game />
-      <FAQ/>
+      <FAQ />
     </>
 
   );
@@ -132,9 +141,16 @@ const Home = () => {
         </div>
         <div className={style.navActions}>
           <NavLink to="/login">Tizimga kirish</NavLink>
-          <Button className={style.button1} icon={<SearchOutlined />}>
-            Search
-          </Button>
+          <div className={style.searchContainer}>
+            <FiSearch className={style.searchIcon} />
+            <input
+              type="text"
+              className={style.searchInput}
+              value={searchValue}
+              onChange={handleInputChange}
+              placeholder="Qidirish..."
+            />
+          </div>
         </div>
       </div>
       {isBurgerOpen && (
