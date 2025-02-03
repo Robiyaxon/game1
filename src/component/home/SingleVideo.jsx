@@ -6,6 +6,7 @@ import vid3 from "../../assert/tam.mp4";
 import vid4 from "../../assert/korish.mp4";
 import vid5 from "../../assert/2.Eshitish.mp4";
 import style from './SingleVideo.module.css'; // CSS faylini import qilish
+
 const SingleVideo = () => {
     const { id } = useParams();  // Video ID parametri olish
     const [video, setVideo] = useState(null);
@@ -44,24 +45,21 @@ const SingleVideo = () => {
         if (videos[id]) {
             setVideo(videos[id]);
         }
-    }, [id]);  // 'id' o'zgarganda video yangilanadi
+    }, [id, videos]);  // 'id' va 'videos' o'zgarganda video yangilanadi
 
     if (!video) {
         return <div className={style.videoError}>Video topilmadi</div>;
     }
 
     return (
-        <>
-            <div className={style.videoContainer}>
-                <h1 className={style.videoTitle}>{video.title}</h1>
-                <video className={style.videoElement} controls>
-                    <source src={video.url} type="video/mp4" />
-                    Sizning brauzeringiz video formatini qo'llab-quvvatlamaydi.
-                </video>
-                <h4 className={style.videoDuration}>{video.duration}</h4>
-            </div>
-        </>
-
+        <div className={style.videoContainer}>
+            <h1 className={style.videoTitle}>{video.title}</h1>
+            <video className={style.videoElement} controls>
+                <source src={video.url} type="video/mp4" />
+                Sizning brauzeringiz video formatini qo'llab-quvvatlamaydi.
+            </video>
+            <h4 className={style.videoDuration}>{video.duration}</h4>
+        </div>
     );
 };
 
