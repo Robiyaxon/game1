@@ -5,9 +5,11 @@ import Home from './component/home/Home';
 import Footer from './component/Footer/Footer';
 import Register from './component/login/Register';
 import SingleVideo from './component/home/SingleVideo';
+import ScrollToTop from './component/ScrollToTop';
 function App() {
   return (
     <div >
+      <ScrollToTop />
       <Routes>
         <Route path='login' element={<Login />} />
         <Route path='register' element={<Register />} />
