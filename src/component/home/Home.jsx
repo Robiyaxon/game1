@@ -15,6 +15,7 @@ import Test from './Test';
 import Game from './Game/Game';
 import FAQ from './Faq';
 import { FiSearch } from 'react-icons/fi';
+import Navbar from '../Navbar';
 
 const Home = () => {
   const [openDropdown1, setOpenDropdown1] = useState(false);
@@ -66,7 +67,7 @@ const Home = () => {
 
   return (
     <>
-      {newFunction()}
+      <Navbar/>
       <HomeMain />
       <Count />
       <Card />

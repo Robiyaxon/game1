@@ -8,7 +8,7 @@ import img4 from "../../../assert/game4.png"
 const Game = () => {
     return (
         <div className={style.wrapper}>
-            <NavLink to={"/"} className={style.click}>
+            <NavLink to={"/game"} className={style.click}>
                 <img src={img1} alt="" />
                 <p>Game 1</p>
             </NavLink>
