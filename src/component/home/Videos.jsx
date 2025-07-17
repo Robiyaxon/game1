@@ -1,73 +1,40 @@
 import React from 'react';
 import style from "./Videos.module.css";
-import img1 from "../../assert/aaa.png";
-import img2 from "../../assert/cc.png";
-import img3 from "../../assert/gg.png";
+
+const videos = [
+  { id: "wJECu_mPBEk", title: "1-dars Sezgi o‘rganlari" },
+  { id: "GLzHW4oDj7g", title: "2-dars Biz nimani ko‘ramiz?" },
+  { id: "bEDlvOtHNRg", title: "3-dars Biz olamni qanday qabul qilamiz" },
+  { id: "m6UsBR4xOHU", title: "4-dars Biz nimani eshitamiz?" },
+  { id: "uspeilWB7o0", title: "5-dars Hid bilish" },
+  { id: "j_YLc1P7DDc", title: "6-dars Ta’m sezish" },
+  { id: "CXKj7bm4Ops", title: "7-dars His qilish" },
+  { id: "AVxIGKZjyZY", title: "8-dars Buyumlarga ta’rif beramiz", start: 178 }
+];
 
 const Videos = () => {
-    return (
-        <div className={style.wrapper} id='target-section1'>
-            <h1>Informatika fanidan videodarsliklar</h1>
-            <div className={style.block}>
-                <div className={style.box}>
-                    <a href="https://game1-pearl.vercel.app/static/media/aaa.de1cfe607d38de327183.png" target="_blank" rel="noopener noreferrer">
-                        <img src={img1} alt="1-dars" />
-                        <p>1-dars Sezgi o‘rganlari</p>
-                        <h4>2 daqiqa</h4>
-                    </a>
-                </div>
-                <div className={style.box}>
-                    <a href="https://game1-pearl.vercel.app/home/video/4" target="_blank" rel="noopener noreferrer">
-                        <img src={img2} alt="2-dars" />
-                        <p>2-dars Biz nimani ko‘ramiz?</p>
-                        <h4>2:40 daqiqa</h4>
-                    </a>
-                </div>
-                <div className={style.box}>
-                    <a href="https://youtu.be/bEDlvOtHNRg" target="_blank" rel="noopener noreferrer">
-                        <img src={img3} alt="3-dars" />
-                        <p>3-dars Biz olamni qanday qabul qilamiz</p>
-                        <h4>3:20 daqiqa</h4>
-                    </a>
-                </div>
-                <div className={style.box}>
-                    <a href="https://game1-pearl.vercel.app/home/video/5" target="_blank" rel="noopener noreferrer">
-                        <img src={img3} alt="4-dars" />
-                        <p>4-dars Biz nimani eshitamiz?</p>
-                        <h4>2:40 daqiqa</h4>
-                    </a>
-                </div>
-                <div className={style.box}>
-                    <a href="https://game1-pearl.vercel.app/home/video/2" target="_blank" rel="noopener noreferrer">
-                        <img src={img2} alt="5-dars" />
-                        <p>5-dars Hid bilish</p>
-                        <h4>2:13 daqiqa</h4>
-                    </a>
-                </div>
-                <div className={style.box}>
-                    <a href="https://game1-pearl.vercel.app/home/video/3" target="_blank" rel="noopener noreferrer">
-                        <img src={img3} alt="6-dars" />
-                        <p>6-dars Ta’m sezish</p>
-                        <h4>2:16 daqiqa</h4>
-                    </a>
-                </div>
-                <div className={style.box}>
-                    <a href="https://youtu.be/CXKj7bm4Ops" target="_blank" rel="noopener noreferrer">
-                        <img src={img2} alt="7-dars" />
-                        <p>7-dars His qilish</p>
-                        <h4>3 daqiqa</h4>
-                    </a>
-                </div>
-                <div className={style.box}>
-                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-                        <img src={img3} alt="8-dars" />
-                        <p>8-dars Buyumlarga ta’rif beramiz</p>
-                        <h4>3 daqiqa</h4>
-                    </a>
-                </div>
-            </div>
-        </div>
-    );
-}
+  return (
+    <div className={style.wrapper} id="target-section1">
+      <h1>Informatika fanidan videodarsliklar</h1>
+      <div className={style.block}>
+        {videos.map((video, index) => (
+          <div className={style.box} key={index}>
+            <iframe
+              width="100%"
+              height="215"
+              loading="lazy"
+              src={`https://www.youtube.com/embed/${video.id}${video.start ? `?start=${video.start}` : ''}`}
+              title={video.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+            <p>{video.title}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default Videos;
