@@ -2,7 +2,7 @@ import React, { useRef, useState, useLayoutEffect } from "react";
 import { useNavigate } from "react-router-dom"; // YANGI
 import Confetti from "react-confetti";
 import "./FruitMatchGame.css";
-import Header from "../Header/Header";
+import Navbar from "../Navbar";
 
 const fruits = [
   { id: "apple", img: "https://cdn-icons-png.flaticon.com/512/590/590682.png" },
@@ -121,7 +121,7 @@ const FindTheImageGame = () => {
 
   return (
     <div>
-      <Header />
+      <Navbar />
       <div className="match-game" ref={containerRef}>
         {win && <Confetti width={window.innerWidth} height={window.innerHeight} />}
         <h2 className="title">🍓 Mevalarni bog‘lang!</h2>

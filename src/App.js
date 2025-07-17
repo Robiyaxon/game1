@@ -7,6 +7,7 @@ import Register from './component/login/Register';
 import SingleVideo from './component/home/SingleVideo';
 import ScrollToTop from './component/ScrollToTop';
 import MazeGame from "./component/Game/MazeGame"
+import FindTheImageGame from './component/Game/FindTheImageGame';
 function App() {
   return (
     <div >
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path="/home/video/:id" element={<SingleVideo />} />
         <Route path="game/" element={<MazeGame />} />
+        <Route path="game2/" element={<FindTheImageGame />} />
       </Routes>
       <Footer />
     </div>

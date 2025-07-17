@@ -12,7 +12,7 @@ const Game = () => {
                 <img src={img1} alt="" />
                 <p>Game 1</p>
             </NavLink>
-            <NavLink to={"/"} className={style.click}>
+            <NavLink to={"/game2"} className={style.click}>
                 <img src={img2} alt="" />
                 <p>Game 2</p>
             </NavLink>
