@@ -9,7 +9,8 @@ const videos = [
   { id: "uspeilWB7o0", title: "5-dars Hid bilish" },
   { id: "j_YLc1P7DDc", title: "6-dars Ta’m sezish" },
   { id: "CXKj7bm4Ops", title: "7-dars His qilish" },
-  { id: "AVxIGKZjyZY", title: "8-dars Buyumlarga ta’rif beramiz", start: 178 }
+  { id: "AVxIGKZjyZY", title: "8-dars Buyumlarga ta’rif beramiz", start: 178 },
+  { id: "iY2IXojrXwY", title: "9-dars Bizning dunyo qarashimiz", start: 178 }
 ];
 
 const Videos = () => {
