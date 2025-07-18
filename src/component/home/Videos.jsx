@@ -10,7 +10,10 @@ const videos = [
   { id: "j_YLc1P7DDc", title: "6-dars Ta’m sezish" },
   { id: "CXKj7bm4Ops", title: "7-dars His qilish" },
   { id: "AVxIGKZjyZY", title: "8-dars Buyumlarga ta’rif beramiz", start: 178 },
-  { id: "iY2IXojrXwY", title: "9-dars Bizning dunyo qarashimiz", start: 178 }
+  { id: "iY2IXojrXwY", title: "9-dars Bizning dunyo qarashimiz", start: 28 },
+  { id: "HmzHjjrSru0", title: "10-dars Ketma-ketlik", start: 0 },
+  { id: "_M5X18-ePVc", title: "11-dars Oldin-keyin", start: 0 },
+  { id: "Wlf1T5nrO50", title: "12-dars Edi-bo'ldi", start: 0 },
 ];
 
 const Videos = () => {
